@@ -17,8 +17,7 @@ body {
     background-color: #242527;
     color: #a6a7a8;
     font-size: 14px;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding: 8px 10px 0 10px;
     grid-column: 1;
 }
 
@@ -36,8 +35,9 @@ body {
     line-height: 16px;
     letter-spacing: .05em;
     text-transform: uppercase;
-    margin-bottom: 0px;
-    margin-top: 24px;
+    margin-bottom: 10px;
+    margin-top: 34px;
+
 }
 
 .main-body {
@@ -47,11 +47,16 @@ body {
 
 #logo {
     padding: 20px 20px 0 0;
-
     height: 26px;
 }
 
 .menu-item {
     height: 20px;
-    margin: 4px 12px;
+    margin: 12px 0 8px 4px;
+    display: flex;
+    gap: 10px;
+}
+
+.icon {
+    filter: invert(68%) sepia(0%) saturate(406%) hue-rotate(252deg) brightness(98%) contrast(90%);
 }
