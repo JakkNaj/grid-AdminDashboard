@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap');
 
 body {
     margin: 0;
@@ -6,6 +7,9 @@ body {
 
 :root {
     font-family: 'Inter', sans-serif;
+    --sophos-blue: #005bc8;
+    --sophos-grey: #a6a7a8;
+    --sophos-grey-darker: #9fa0a0;
 }
 
 .container {
@@ -15,20 +19,22 @@ body {
 
 .side-menu {
     background-color: #242527;
-    color: #a6a7a8;
+    color: var(--sophos-grey);
     font-size: 14px;
-    padding: 8px 10px 0 10px;
+    padding: 8px 10px 0 16px;
     grid-column: 1;
 }
 
 .menu-section > h2 {
     color: white;
-    margin-bottom: 0px;
+    margin-bottom: 10px;
+    font-weight: 600;
+    letter-spacing: .03em;
 }
 
 .menu-section > h4 {
     padding-right: 12px;
-    color: #9fa0a0;
+    color: var(--sophos-grey-darker);
     font-style: normal;
     font-weight: 700;
     font-size: 12px;
@@ -37,7 +43,6 @@ body {
     text-transform: uppercase;
     margin-bottom: 10px;
     margin-top: 34px;
-
 }
 
 .main-body {
@@ -52,11 +57,25 @@ body {
 
 .menu-item {
     height: 20px;
-    margin: 12px 0 8px 4px;
+    padding: 6px 0 4px 6px;
     display: flex;
     gap: 10px;
 }
 
 .icon {
     filter: invert(68%) sepia(0%) saturate(406%) hue-rotate(252deg) brightness(98%) contrast(90%);
+}
+
+.menu-item:hover{
+    font-weight: 600;
+    color: white;
+    background-color: var(--sophos-blue);
+    display: flex;
+    border-radius: 3px;
+    cursor: pointer;
+    opacity: 1;
+}
+
+.menu-item:hover .icon {
+    filter: invert(100%) sepia(26%) saturate(2%) hue-rotate(12deg) brightness(112%) contrast(100%);
 }
